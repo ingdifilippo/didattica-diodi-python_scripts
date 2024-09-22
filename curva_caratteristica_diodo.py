@@ -17,6 +17,8 @@ V_start = 0
 V_stop = 0.77
 punti_di_calcolo = 1000
 
+# Creo una sequenza di mille valori di tensione equispaziati per il calcolo della corrente
+
 V_diodo = np.linspace(V_start, V_stop, punti_di_calcolo)
 
 I_diodo = I_sat * np.exp(V_diodo/V_termica)
